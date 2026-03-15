@@ -1,0 +1,38 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Documentation
+*.md
+LICENSE
+
+# Legacy / reference code
+_legacy_v1/
+pp_reference/
+
+# Node artifacts (rebuilt in Docker)
+frontend/node_modules/
+frontend/dist/
+frontend/pnpm-lock.yaml
+
+# Python artifacts
+backend/__pycache__/
+backend/**/__pycache__/
+backend/*.egg-info/
+backend/.mypy_cache/
+backend/.pytest_cache/
+backend/.ruff_cache/
+backend/app/generated/
+
+# IDE / OS
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Docker (don't send Dockerfile into itself)
+docker/docker-compose.yml
+docker/DOCKERFILE_HEREDOC_PATTERN.md
+docker/HEREDOC_TEMPLATE.md
