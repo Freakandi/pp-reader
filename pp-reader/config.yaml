@@ -3,7 +3,7 @@
 # Ref: https://developers.home-assistant.io/docs/add-ons/configuration
 
 name: PP Reader
-version: "0.1.5"
+version: "0.1.6"
 slug: pp_reader
 description: >
   Standalone Portfolio Performance (.portfolio) reader with a full-stack web UI.
@@ -46,7 +46,7 @@ schema:
   db_port: int
   db_name: str
   db_user: str
-  db_password: password?
+  db_password: str?
   portfolio_path: str
   file_poll_interval: int
   enrich_interval: int
