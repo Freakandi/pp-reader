@@ -3,7 +3,7 @@
 # Ref: https://developers.home-assistant.io/docs/add-ons/configuration
 
 name: PP Reader
-version: "0.1.12"
+version: "0.1.13"
 slug: pp_reader
 description: >
   Standalone Portfolio Performance (.portfolio) reader with a full-stack web UI.
