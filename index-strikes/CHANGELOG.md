@@ -5,6 +5,10 @@
 - Strike prices now show multi-period analysis: 30Y, 20Y, 10Y, and Weekday 10Y
 - Historical data fetch extended from 10 to 30 years for richer analysis
 - Indices with limited history gracefully show only available periods
+- Ingress path detection moved fully to per-request `X-Ingress-Path` header
+  reading in `_IngressPathMiddleware`; the startup Supervisor API curl call
+  and uvicorn `--root-path` flag have been removed from `run.sh`
+- Add timestamped logging to all Python/uvicorn output (request logs, warnings, scheduler)
 
 ## [0.1.30] — 2026-03-29
 
