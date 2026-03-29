@@ -6,6 +6,17 @@
 - Historical data fetch extended from 10 to 30 years for richer analysis
 - Indices with limited history gracefully show only available periods
 
+## 0.1.28 — 2026-03-29
+
+### Fixed
+- Fix dual process startup: remove s6 service from Dockerfile (only CMD remains)
+- Fix double migration: remove synchronous Alembic from run.sh (lifespan thread handles it)
+- Add diagnostic warning when DB_HOST is localhost/unset in production
+
+### Improved
+- Container logs now include date+time timestamps (YYYY-MM-DD HH:MM:SS)
+- Container timezone auto-detected from HA system settings (no more UTC-only logs)
+
 ## 0.1.26 — 2026-03-29
 
 ### Fixed
