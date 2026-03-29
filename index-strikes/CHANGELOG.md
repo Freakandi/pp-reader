@@ -6,6 +6,20 @@
 - Historical data fetch extended from 10 to 30 years for richer analysis
 - Indices with limited history gracefully show only available periods
 
+## [0.1.30] — 2026-03-29
+
+### Fixed
+- Replace bashio API calls with direct /data/options.json reading via jq —
+  fixes "Unable to access the API, forbidden" errors that caused all config
+  values (db_host, db_port, log_level, etc.) to be null
+- Fix timezone detection to use SUPERVISOR_TOKEN + curl instead of bashio
+- Fix ingress path reading (bashio::addon.ingress_path doesn't exist;
+  now uses Supervisor REST API with graceful fallback)
+
+### Changed
+- Remove hassio_api/hassio_role from config.yaml (not needed for jq/curl approach)
+- Add startup: application and boot: auto to config.yaml
+
 ## [0.1.29] — 2026-03-29
 
 ### Fixed
