@@ -25,6 +25,7 @@ options:
   db_password: ""
   update_schedule: "16:00"
   log_level: "info"
+  timezone: ""
 
 schema:
   db_host: str
@@ -34,5 +35,6 @@ schema:
   db_password: password
   update_schedule: str?
   log_level: list(debug|info|warning|error)?
+  timezone: str?
 
 image: "ghcr.io/freakandi/index-strikes/{arch}"
