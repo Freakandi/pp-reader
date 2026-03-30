@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [0.1.37] — 2026-03-30
+### Fixed
+- Log timestamps now use the host's local timezone (e.g. CEST) instead of UTC
+- Added optional `timezone` config option as fallback when Supervisor API detection is unavailable
+- Prevented Alembic's `fileConfig()` from clobbering the root logger's timestamped formatter
+
 ## [0.1.36] — 2026-03-30
 ### Changed
 - Weekday Volatility section now shows Q97.5/Q2.5 quantiles (previously Q95/Q5).
