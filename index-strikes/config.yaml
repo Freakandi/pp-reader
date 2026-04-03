@@ -1,5 +1,5 @@
 name: "Index Strikes"
-version: "1.0.0"
+version: "1.0.1"
 slug: index-strikes
 description: "Stock index options strike price recommendations based on historical volatility analysis"
 url: "https://github.com/Freakandi/index-strikes"

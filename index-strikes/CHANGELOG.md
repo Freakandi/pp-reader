@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [1.0.1] — 2026-04-04
+
+### Fixed
+- Fixed data refresh button
+
 ## [1.0.0] — 2026-04-04
 
 ### Added
